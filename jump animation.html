@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes jump{
+			0%{
+				transform: translateY(0px);
+			}
+			15%{
+				transform: translateY(-100px);
+			}
+			30%{
+				transform: translateY(100px);
+			}
+			45%{
+				transform: translateY(-75px);
+			}
+			60%{
+				transform: translateY(75px);
+			}
+			70%{
+				transform: translateY(-50px);
+			}
+			80%{
+				transform: translateY(50px);
+			}
+			90%{
+				transform: translateY(-25px);
+			}
+			100%{
+				transform: translateY(25px);
+			}
+
+		}
+		div{
+			position:absolute;
+			height:400px;
+			width: 400px;
+			left:25%;
+			top:25%;
+			background-color: cyan;
+			transition: all 2s linear;
+			animation: jump 1s ease-in-out 1;
+		}
+		
+	</style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

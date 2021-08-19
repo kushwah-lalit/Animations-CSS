@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes Fade{
+			0%{
+				opacity: 1;
+			}
+			
+			
+			100%{
+				opacity: 0;
+			}
+
+		}
+		div{
+			position:absolute;
+			height:auto;
+			width: auto;
+			padding:10px;
+			left:25%;
+			top:25%;
+			border:1px solid black;
+			font-size:1.5rem;
+			background-color: cyan;
+			transition: all 2s linear;
+			animation: Fade 3s ease-in-out infinite alternate ;
+		}
+		
+	</style>
+</head>
+<body>
+<div>
+Fade-in Animation
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes revolve{
+			0%{
+              transform:rotate(0deg);
+			}
+			
+       
+			100%{
+			transform:  rotate3d(1, 1, 0.5,360deg);
+			}
+		} 
+		#cube{
+			position:relative;
+			height:600px;
+			width:600px;
+			transform-style: preserve-3d;
+			perspective: 10000px;
+			/*transform:rotateX(30deg) rotateY(-30deg);*/
+			margin:30%;
+			animation:revolve 3s ease-in-out infinite alternate; 
+		}
+		.face{
+			position:absolute;
+			height:200px;
+			width:200px;
+			top:20%;
+			left:20%;
+			transition:all 1s ease-in-out;
+		}
+		#a{
+			background-color: blue;
+		}
+		#b{
+			background-color: red;
+			transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+		}
+		#c{
+			background-color: green;
+			transform: rotateY(90deg) translateZ(100px) translateX(-100px);
+		}
+		#d{
+			background-color: orange;
+			transform: rotateX(90deg) translateY(100px) translateZ(-100px);
+		}
+		#e{
+			background-color: cyan;
+			transform: rotateX(90deg) translateY(100px) translateZ(100px);
+		}
+		#f{
+			background-color:pink;
+			transform:translateZ(200px);
+		}
+		
+	</style>
+</head>
+<body>
+<div id="cube">
+	<div id="a" class="face"></div>
+	<div id="b" class="face"></div>
+	<div id="c" class="face"></div>
+	<div id="d" class="face"></div>
+	<div id="e" class="face"></div>
+	<div id="f" class="face"></div>
+</div>
+</body>
+</html>
